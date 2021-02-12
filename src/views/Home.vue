@@ -21,7 +21,7 @@
         >
           <span
             class="event-main-button-hover"
-            @click="gotoAboutMePage"
+            @click="gotoProjectsPage"
           >
             Projects
           </span>

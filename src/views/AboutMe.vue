@@ -1,5 +1,14 @@
 <template>
   <v-container>
+    <v-icon
+      style="position:fixed; left:30px; top:45%;"
+      size="60px"
+      color="#444444"
+      class="event-back-button-hover"
+      @click="gotoMain"
+    >
+      mdi-arrow-left-bold-box-outline
+    </v-icon>
     <v-row>
       <v-col
         cols="6"
@@ -25,8 +34,12 @@ export default {
   components: {
     Photo,
     Info
+  },
+  methods: {
+    gotoMain: function () {
+      this.$router.push({name:"Home"})
+    }
   }
-
 }
 </script>
 
