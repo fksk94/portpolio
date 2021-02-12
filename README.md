@@ -1,24 +1,39 @@
-# portfolio
+# Taewan's Portfolio
 
-## Project setup
-```
-yarn install
-```
+## INDEX
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+1. [포트폴리오를 만든 배경](#포트폴리오를 왜 만들었나요?)
+2. [사용 스택](#스택은 무슨 스택을 사용했나요?)
+3. [포트폴리오 설명](#이 포트폴리오에 대해서 간단하게 설명해 주세요.)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+4. [에러사항 및 느낀 점](#포트폴리오를 만들면서 에러사항과 느낀점이 있었나요?)
 
-### Lints and fixes files
-```
-yarn lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## 포트폴리오를 왜 만들었나요?
+
+
+
+
+
+## 스택은 무슨 스택을 사용했나요?
+
+* Vue
+  * Vuetify
+  * Vue-router
+  * Vuex
+
+
+
+
+
+
+
+## 포트폴리오에 대해서 간단하게 설명해 주세요.
+
+
+
+
+
+## 포트폴리오를 만들면서 에러사항과 느낀점이 있었나요?
+
