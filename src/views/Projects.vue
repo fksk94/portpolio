@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="projects">
     <v-icon
       style="position:fixed; left:30px; top:45%;"
       size="60px"
@@ -10,8 +10,8 @@
       mdi-arrow-left-bold-box-outline
     </v-icon>
     <v-container>
-      <v-row justify="center">
-        <v-col cols="8">
+      <v-row>
+        <v-col offset-xl="2" xl="8" offset="1" cols="10">
           <v-container class="max-width">
             <NUVO
               v-if="page == 1"
@@ -31,14 +31,15 @@
             <RNCRUD
               v-if="page == 6"
             />
-            <v-pagination
-              v-model="page"
-              class="my-4"
-              :length="6"
-              color="#17d5a7"
-            ></v-pagination>
           </v-container>
         </v-col>
+      </v-row>
+      <v-row class="d-flex justify-center max-width">
+        <v-pagination
+          v-model="page"
+          :length="6"
+          color="#17d5a7"
+        ></v-pagination>
       </v-row>
     </v-container>
   </div>
@@ -82,6 +83,10 @@ export default {
   transform: scale(1.1);
   color:#17d5a7 !important;
   cursor: pointer;
+}
+
+.projects {
+  margin-top: 40px;
 }
 
 </style>

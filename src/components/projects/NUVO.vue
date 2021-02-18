@@ -2,19 +2,21 @@
   <div>
     <v-row>
       <v-col
-        cols="4"
+        cols="12"
       >
-        <span style="font-size:50px;">> Info.</span>
-        <p> 프로젝트 명 </p>
-        <p> 기간 / 팀원 수 </p>
-        <p> 목표 </p>
-        <p> 역할 구분 / 내 역할 </p>
-        <p> 수행과정 </p>
-        <p> 결과 </p>
-        <p> 느낀 점 </p>
+        <ProjectTitle
+          :projectTitle = "projectTitle"
+        />
+      </v-col>
+    </v-row>
+    <v-row style="margin-top:25px;">
+        <v-col
+        cols="6"
+      >
+        <Info/>
       </v-col>
       <v-col
-        cols="8"
+        cols="6"
       >
         프로젝트 사진
       </v-col>
@@ -23,8 +25,21 @@
 </template>
 
 <script>
+import ProjectTitle from "@/components/projects/entity/Title.vue"
+import Info from "@/components/nuvo/Info.vue"
+
+
 export default {
   name:"NUVO",
+  data: function () {
+    return {
+      projectTitle: "N U V O",
+    }
+  },
+  components: {
+    Info,
+    ProjectTitle,
+  }
 
 }
 </script>
